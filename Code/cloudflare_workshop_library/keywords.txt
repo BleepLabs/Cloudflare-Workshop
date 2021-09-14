@@ -1,0 +1,5 @@
+cloudflare_workshop	KEYWORD2
+digitalSmoothing	KEYWORD2
+set_pixel_HSV	KEYWORD2
+smooth	KEYWORD2
+fscale	KEYWORD2
