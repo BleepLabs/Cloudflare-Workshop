@@ -1,6 +1,6 @@
 //More info: https://github.com/BleepLabs/Cloudflare-Workshop/wiki/Cloudflare-workshop-library
 
-#include <cloudflare_workshop.h>
+#include <cloudflare_arduino_workshop.h>
 
 digitalSmoothing sm1; //Smooth two analog readings
 digitalSmoothing sm2;

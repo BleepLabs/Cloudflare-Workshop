@@ -49,7 +49,7 @@ void loop() {
       float set_hue = .4 + (random(10) / 40.0);
       set_pixel_HSV(0, set_hue , .9, 1);
 
-      leds.show(); // after we've set what we want all the LEDs to be we send the data out through this function
+      ledGrid.show(); // after we've set what we want all the LEDs to be we send the data out through this function
     }
   }
 }
