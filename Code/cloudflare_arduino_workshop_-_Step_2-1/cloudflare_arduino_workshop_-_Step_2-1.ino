@@ -1,6 +1,7 @@
 
 #include <cloudflare_arduino_workshop.h>  //Library with LED and other code
 
+// data types https://www.arduino.cc/reference/en/#variables
 int button1;
 int prev_button1;
 int pot1;
@@ -8,9 +9,10 @@ int led1;
 unsigned long current_time;
 unsigned long prev_time[8]; //array of 8 variables named "prev_time"
 
+// defines are not variables, juts substitutions
 #define button_pin 2
 #define pot_pin A0  //"A" pins are connected to the ADC
-#define led_pin 10 //only some pins can do PWM
+#define led_pin 10 //only some pins can do PWM //https://www.arduino.cc/en/Tutorial/Foundations/PWM
 
 int shift;
 
