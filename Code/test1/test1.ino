@@ -3,7 +3,7 @@
 int interval1 = 500; //time between blinks in millisecods
 int on_time1 = 100; // time the LED stays on in microseconds
 
-#include <arduinoWorkshop1.h>
+#include <cloudflare_arduino_workshop.h>
 
 digitalSmoothing sm1;
 
