@@ -6,8 +6,14 @@
  generated each time they hit the wall. 
  
  */
+
+ //custom audio libraries included in this folder
 #include "follower.h"
 #include "effect_tape_delay.h"
+
+//Audio library info https://github.com/BleepLabs/dadageek-April-21/wiki/The-Teensy-Audio-library
+// When using the teensy 3.2 and DAC out sgtl 500 is not used and DAC is used instead of i2s for the out
+// Breadboard hookup guide  https://github.com/BleepLabs/Cloudflare-Workshop/blob/main/Docs/Arduino_workshop_Breadboard%20setup%20-%20Audio.pdf
 
 #include <Audio.h>
 #include <Wire.h>

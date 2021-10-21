@@ -1,7 +1,7 @@
 
-#include "follower.h"
+#include "ramp.h"
 
-void AudioAnalyzeFollower::update(void)
+void AudioRamp::update(void)
 {
   audio_block_t *block;
   uint32_t i;
