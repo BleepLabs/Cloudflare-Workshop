@@ -10,7 +10,7 @@ byte drawingMemory[num_of_leds * 3];       //  3 bytes per LED
 DMAMEM byte displayMemory[num_of_leds * 12]; // 12 bytes per LED
 WS2812Serial ledGrid(num_of_leds, displayMemory, drawingMemory, pin, WS2812_GRB);
 
-#define max_brightness 0.1
+float max_brightness = 0.1;
 
 
 //This function is a little different than you might see in other libraries but it works pretty similar
@@ -26,6 +26,10 @@ WS2812Serial ledGrid(num_of_leds, displayMemory, drawingMemory, pin, WS2812_GRB)
 // (it's not called brightness since, unlike in photoshop, we're going from black to fully lit up
 
 //based on https://stackoverflow.com/questions/3018313/algorithm-to-convert-rgb-to-hsv-and-hsv-to-rgb-in-range-0-255-for-both
+
+void set_max_brightness(float m){
+	max_brightness=m;
+}
 
 void set_pixel_HSV(int pixel, float fh, float fs, float fv) {
 	byte RedLight;
